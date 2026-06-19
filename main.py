@@ -2,15 +2,16 @@ import random
 
 # функция возведения в квадрат
 def sqware_array(arr):
-    b = [0] * N
+    b = [0] * len(arr)
     for i in range(N):
         b[i] = arr[i] * arr[i]
     return b
 
 # функция реерса массива
 def reverse_array(arr):
-    for i in range(N // 2):
-        arr[i], arr[N - i - 1] = arr[N - i - 1], arr[i]
+    Nf = len(arr)
+    for i in range(Nf // 2):
+        arr[i], arr[Nf - i - 1] = arr[Nf - i - 1], arr[i]
     return arr
 
 print("Изучение языка Python")
